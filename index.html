@@ -1,51 +1,76 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Salman Fariz - Portfolio</title>
-  <link rel="stylesheet" href="style.css" />
-</head>
-<body class="light">
-  <header>
-    <div class="container">
-      <h1>Salman Fariz</h1>
-      <nav>
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="projects.html">Projects</a>
-        <a href="contact.html">Contact</a>
-      </nav>
-    </div>
-  </header>
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  transition: background 0.3s, color 0.3s;
+}
 
-  <main class="container">
-    <section class="hero">
-      <h2>Hi, I'm Salman Fariz</h2>
-      <p>A Graphic & Motion Designer. This is my new portfolio site with a clean, multi-page layout.</p>
-    </section>
+.container {
+  padding: 20px;
+  max-width: 900px;
+  margin: auto;
+}
 
-    <section class="highlights">
-      <h3>Highlights</h3>
-      <ul>
-        <li>💼 Graphic Design Projects</li>
-        <li>🎬 Motion Graphics Edits</li>
-        <li>🖥️ Responsive Web Layout</li>
-      </ul>
-    </section>
-  </main>
+header {
+  background: #333;
+  color: white;
+  padding: 10px 0;
+}
 
-  <footer>
-    <p>© 2025 Salman Fariz. All rights reserved.</p>
-    <button onclick="toggleTheme()">Toggle Theme</button>
-  </footer>
+header h1 {
+  margin: 0;
+  text-align: center;
+}
 
-  <script>
-    function toggleTheme() {
-      const body = document.body;
-      body.classList.toggle("dark");
-      body.classList.toggle("light");
-    }
-  </script>
-</body>
-</html>
+nav {
+  text-align: center;
+  margin-top: 10px;
+}
+
+nav a {
+  color: white;
+  margin: 0 15px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+main {
+  padding: 20px 0;
+}
+
+.hero {
+  text-align: center;
+  padding: 20px;
+}
+
+.highlights ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.highlights li {
+  margin: 10px 0;
+}
+
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #222;
+  color: white;
+}
+
+button {
+  margin-top: 10px;
+  padding: 6px 12px;
+  cursor: pointer;
+}
+
+/* Theme Support */
+body.light {
+  background: #f4f4f4;
+  color: #111;
+}
+
+body.dark {
+  background: #111;
+  color: #f4f4f4;
+}
